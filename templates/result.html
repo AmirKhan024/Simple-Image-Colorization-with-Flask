@@ -1,12 +1,9 @@
 {% extends 'base.html' %}
-
 {% block content %}
 <h1>Colorized Image</h1>
-<img src="data:image/png;base64,{{ img_str }}" class="colorized-image" id="colorized-image">
-<br>
+<img src="data:image/png;base64,{{ img_str }}" class="colorized-image" id="colorized-image"><br>
 <a href="{{ url_for('index') }}" class="button">Upload Another Image</a>
 <a id="download-btn" class="button" download="colorized_image.png">Download Image</a>
-
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     var img = document.getElementById('colorized-image');
