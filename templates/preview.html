@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Black and White Image Preview</h1>
+<img src="data:image/png;base64,{{ img_str }}" style="max-width:100%;">
+<form action="{{ url_for('colorize_image_route') }}" method="post">
+    <input type="hidden" name="image_data" value="{{ img_str }}">
+    <button type="submit">Colorize Image</button>
+</form>
+<a href="{{ url_for('index') }}" class="button">Upload Another Image</a>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Upload a Black and White Image</h1>
+<form action="{{ url_for('upload_image') }}" method="post" enctype="multipart/form-data" id="upload-form">
+    <input type="file" name="image" accept="image/*" onchange="previewImage(event)">
+    <button type="submit">Upload Image</button>
+</form>
+<img id="preview" style="display:none; max-width:100%; margin-top:20px;">
+<script>
+function previewImage(event) {
+    const input = event.target;
+    const reader = new FileReader();
+    reader.onload = function() {
+        const preview = document.getElementById('preview');
+        preview.src = reader.result;
+        preview.style.display = 'block';
+    };
+    reader.readAsDataURL(input.files[0]);
+}
+</script>
+{% endblock %}
