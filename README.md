@@ -1,11 +1,12 @@
 # Grayscale to Color Conversion with Flask
  This Flask application allows users to upload black and white images and apply colorization using basic tinting techniques. It provides an intuitive interface to visualize, download, and store the colorized images, demonstrating fundamental image processing capabilities with Flask and OpenCV.
 
- ![BW1](https://github.com/AmirKhan024/Simple-Image-Colorization-with-Flask/assets/163306591/5a1a55d3-9208-4cf7-9f1c-72275332dfe1)
+![image](https://github.com/AmirKhan024/Simple-Image-Colorization-with-Flask/assets/163306591/7f1f84f3-50fe-4fd2-8e41-bf0c8fdbbff4)
 
- ![BW2](https://github.com/AmirKhan024/Simple-Image-Colorization-with-Flask/assets/163306591/1251896d-a60c-4930-b39d-4d40eea88f87)
+![image](https://github.com/AmirKhan024/Simple-Image-Colorization-with-Flask/assets/163306591/4acb651d-26af-4092-b812-2dd2918d063d)
 
- ![BW3](https://github.com/AmirKhan024/Simple-Image-Colorization-with-Flask/assets/163306591/3b74a2ca-ea8e-4c07-80b9-e90e00b478e7)
+![image](https://github.com/AmirKhan024/Simple-Image-Colorization-with-Flask/assets/163306591/bc4266f4-61f2-4a51-abe5-af997f7f52c1)
+
 
 
 
